@@ -548,3 +548,86 @@ input {
     font-size: 1.2rem;
     color: var(--primary-red);
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .glass-card {
+    padding: 30px 20px;
+    border-radius: 25px;
+    width: 95%; /* Make it fill more screen width */
+  }
+
+  .romantic-title {
+    font-size: 2.2rem;
+  }
+
+  .fan-name {
+    font-size: 2.5rem;
+  }
+
+  #fanPhoto {
+    width: 140px;
+    height: 140px;
+  }
+
+  .happy-vday {
+    font-size: 1.6rem;
+  }
+
+  .sweet-text {
+    font-size: 1.1rem;
+  }
+
+  .days-bubble {
+    font-size: 1.6rem;
+    padding: 12px 25px;
+  }
+
+  .pin-input {
+    width: 45px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
+
+  .pin-group {
+    gap: 8px;
+  }
+
+  .premium-btn {
+    width: 100%; /* Full width buttons on mobile */
+    max-width: 280px;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+  }
+
+  .modal-content {
+      width: 95%;
+      padding: 25px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .romantic-title {
+    font-size: 1.8rem;
+  }
+
+  .pin-input {
+    width: 40px;
+    height: 50px;
+    font-size: 1.4rem;
+  }
+
+  .pin-group {
+    gap: 5px;
+  }
+
+  .fan-name {
+    font-size: 2rem;
+  }
+}
+

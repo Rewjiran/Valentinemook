@@ -78,23 +78,12 @@ function animateParticles() {
     requestAnimationFrame(animateParticles);
 }
 
-// --- 3D TILT EFFECT ---
-function setupTilt() {
-    const cards = document.querySelectorAll('.glass-card');
-    cards.forEach(card => {
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'rotateX(0deg) rotateY(0deg)';
-        });
-    });
-}
-
 // --- INITIALIZATION ---
 function init() {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
     initParticles();
     animateParticles();
-    setupTilt();
     
     createHearts();
     setupPinInputs();
