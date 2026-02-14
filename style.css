@@ -24,7 +24,6 @@ body {
   overflow: hidden;
   background: radial-gradient(circle at center, #ff8a9a 0%, #ff5e78 50%, #d4145a 100%);
   color: #fff; /* Changed to white for better contrast on dark red */
-  perspective: 1000px;
 }
 
 #particleCanvas {
@@ -46,7 +45,6 @@ body {
   align-items: center;
   z-index: 10;
   transition: opacity 0.5s ease;
-  transform-style: preserve-3d;
 }
 
 .hidden {
@@ -81,7 +79,6 @@ body {
     inset 0 0 0 1px rgba(255, 255, 255, 0.1);
   text-align: center;
   width: 100%;
-  transition: transform 0.1s ease-out; /* For 3D tilt smoothness */
 }
 
 .romantic-title {
@@ -521,6 +518,7 @@ input {
     max-height: 80vh;
     overflow-y: auto;
     background: #fffafa !important; /* Slightly off-white for paper feel */
+    color: #2d2d2d !important; /* Dark text for readability */
 }
 
 .close-modal {
@@ -540,6 +538,7 @@ input {
 .letter-text p {
     margin-bottom: 15px;
     font-size: 1.1rem;
+    color: #444; /* Soft dark gray for reading */
 }
 
 .letter-footer {
